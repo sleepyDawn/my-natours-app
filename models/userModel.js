@@ -54,7 +54,7 @@ const userSchema = new mongoose.Schema({
 });
 
 userSchema.pre('save', async function (next) {
-  console.log('checking the pre middleware!!!: ', this.isModified('password'));
+  // console.log('checking the pre middleware!!!: ', this.isModified('password'));
   // Only run this function if password was actually modified
   if (!this.isModified('password')) return next();
   //   Hash the password with cost of 12

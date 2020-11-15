@@ -19,7 +19,7 @@ export const updateSettings = async (data, type) => {
       url: url,
       data,
     });
-    console.log('checking updation status', res.data);
+    // console.log('checking updation status', res.data);
     if (res.data.status === 'success') {
       showAlert('success', `${type.toUpperCase()} updated successfully!!`);
       window.setTimeout(() => {

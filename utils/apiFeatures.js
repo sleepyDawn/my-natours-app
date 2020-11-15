@@ -35,7 +35,7 @@ class APIFeatures {
     // 3. Field Limiting
     if (this.queryObj.fields) {
       const fields = this.queryObj.fields.split(',').join(' ');
-      console.log('checking fields: ', fields);
+      // console.log('checking fields: ', fields);
       this.query = this.query.select(fields);
     } else {
       this.query = this.query.select('-__v');

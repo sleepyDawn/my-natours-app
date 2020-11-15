@@ -72,10 +72,10 @@ exports.resizeTourImages = catchAsync(async (req, res, next) => {
       req.body.images.push(filename);
     })
   );
-  console.log(
-    'Checking request.body after saving it to req.body.images: ',
-    req.body
-  );
+  // console.log(
+  //   'Checking request.body after saving it to req.body.images: ',
+  //   req.body
+  // );
 
   next();
 });
